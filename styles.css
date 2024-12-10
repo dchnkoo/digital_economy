@@ -1,0 +1,140 @@
+/* Загальні стилі */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #0078d7;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #005bb5;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+header {
+    background: linear-gradient(135deg, #0078d7, #003e80);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Меню навігації */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 40px;
+    gap: 15px;
+}
+
+nav ul li {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background: #0078d7;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 1em;
+}
+
+nav ul li:hover {
+    background: #005bb5;
+}
+
+/* Основний контент */
+main {
+    padding: 20px 0;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+}
+
+.section h2 {
+    color: #0078d7;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.section p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Підвал */
+footer {
+    background: #003e80;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
